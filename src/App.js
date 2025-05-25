@@ -51,13 +51,14 @@ const Layout = ({ children }) => {
 
   {/* Mobile menu */}
   {menuOpen && (
-    <nav className="md:hidden mt-4 flex flex-col items-center text-white text-lg space-y-2">
-      <Link to="/about" onClick={() => setMenuOpen(false)}>About</Link>
-      <Link to="/services" onClick={() => setMenuOpen(false)}>Services</Link>
-      <Link to="/portfolio" onClick={() => setMenuOpen(false)}>Portfolio</Link>
-      <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
-    </nav>
-  )}
+  <div className="absolute top-[80px] left-0 w-full bg-black/90 text-white text-lg py-6 z-50 flex flex-col items-center space-y-4 md:hidden">
+    <Link to="/about" onClick={() => setMenuOpen(false)}>About</Link>
+    <Link to="/services" onClick={() => setMenuOpen(false)}>Services</Link>
+    <Link to="/portfolio" onClick={() => setMenuOpen(false)}>Portfolio</Link>
+    <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
+  </div>
+)}
+
 
   {/* Desktop nav */}
   <nav className="hidden md:flex space-x-6 text-white text-lg font-medium absolute right-6 top-6">

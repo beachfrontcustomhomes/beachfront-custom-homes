@@ -1,7 +1,7 @@
 import React from "react";
 
 const PageHero = ({ image, title }) => (
-  <div className="relative w-full h-[65vh] overflow-hidden">
+  <div className="relative w-full h-[70vh] overflow-hidden">
     <img
       src={image}
       alt={title}

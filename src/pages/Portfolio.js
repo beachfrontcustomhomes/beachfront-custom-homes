@@ -2,18 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import PageHero from "../components/PageHero"; 
 
-const PageHero = ({ image, title }) => (
-  <div className="relative w-full h-[65vh] overflow-hidden">
-    <img
-      src={image}
-      alt={title}
-      className="absolute top-0 left-0 w-full h-full object-cover"
-    />
-    <div className="absolute inset-0 bg-black/40 flex items-center justify-center z-10">
-      <h1 className="text-white text-4xl md:text-6xl font-bold">{title}</h1>
-    </div>
-  </div>
-);
+
 const Portfolio = () => (
   <>
     <Helmet>
