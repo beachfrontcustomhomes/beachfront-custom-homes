@@ -20,41 +20,54 @@ const Layout = ({ children }) => {
 
 
       {/* Header */}
-      <div className="absolute top-0 left-0 w-full flex flex-col md:flex-row md:items-center md:justify-between p-6 z-50 gap-4">
-        {/* Logo and contact */}
-        <div className="flex flex-col md:flex-row md:items-center gap-4">
-          <Link to="/">
-            <img src="/logo.png" alt="Beachfront Logo" className="w-[190px] h-auto" />
-          </Link>
-          <div className="text-white text-sm md:text-base leading-tight">
-            <p>
-               <a href="tel:2392362407" className="hover:underline">(239) 236-2407</a>
-            </p>
-            <p>
-               <a href="mailto:info@beachfrontcustomhomes.com" className="hover:underline">
-                info@beachfrontcustomhomes.com
-              </a>
-            </p>
-          </div>
-        </div>
-
-        {/* Hamburger button (mobile only) */}
-        <div className="md:hidden text-white text-2xl cursor-pointer" onClick={() => setMenuOpen(!menuOpen)}>
-          ☰
-        </div>
-
-        {/* Nav links */}
-        <nav
-          className={`flex-col md:flex md:flex-row md:space-x-6 text-white text-lg font-medium text-center md:text-right ${
-            menuOpen ? "flex space-y-4 mt-4 md:mt-0" : "hidden md:flex"
-          }`}
-        >
-          <Link to="/about" onClick={() => setMenuOpen(false)}>About</Link>
-          <Link to="/services" onClick={() => setMenuOpen(false)}>Services</Link>
-          <Link to="/portfolio" onClick={() => setMenuOpen(false)}>Portfolio</Link>
-          <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
-        </nav>
+      <div className="absolute top-0 left-0 w-full z-50 p-6">
+  <div className="flex justify-between items-center">
+    {/* Logo & Contact Info */}
+    <div className="flex flex-col md:flex-row md:items-center gap-4">
+      <Link to="/">
+        <img src="/logo.png" alt="Beachfront Logo" className="w-[190px] h-auto" />
+      </Link>
+      <div className="text-white text-sm md:text-base leading-tight">
+        <p>
+          <a href="tel:2392362407" className="hover:underline">(239) 236-2407</a>
+        </p>
+        <p>
+          <a href="mailto:info@beachfrontcustomhomes.com" className="hover:underline">
+            info@beachfrontcustomhomes.com
+          </a>
+        </p>
       </div>
+    </div>
+
+    {/* Hamburger Toggle (mobile only) */}
+    <button
+      onClick={() => setMenuOpen(!menuOpen)}
+      className="md:hidden text-white text-3xl focus:outline-none"
+      aria-label="Toggle Menu"
+    >
+      ☰
+    </button>
+  </div>
+
+  {/* Mobile menu */}
+  {menuOpen && (
+    <nav className="md:hidden mt-4 flex flex-col items-center text-white text-lg space-y-2">
+      <Link to="/about" onClick={() => setMenuOpen(false)}>About</Link>
+      <Link to="/services" onClick={() => setMenuOpen(false)}>Services</Link>
+      <Link to="/portfolio" onClick={() => setMenuOpen(false)}>Portfolio</Link>
+      <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
+    </nav>
+  )}
+
+  {/* Desktop nav */}
+  <nav className="hidden md:flex space-x-6 text-white text-lg font-medium absolute right-6 top-6">
+    <Link to="/about">About</Link>
+    <Link to="/services">Services</Link>
+    <Link to="/portfolio">Portfolio</Link>
+    <Link to="/contact">Contact</Link>
+  </nav>
+</div>
+
 
       <main>{children}</main>
       <footer className="bg-gray-900 text-white py-10 px-6 mt-16">
