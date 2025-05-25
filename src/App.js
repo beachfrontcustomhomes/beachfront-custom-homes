@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
           </Link>
           <div className="text-white text-sm md:text-base leading-tight">
             <p>
-               <a href="tel:2395551234" className="hover:underline">(239) 555-1234</a>
+               <a href="tel:2392362407" className="hover:underline">(239) 236-2407</a>
             </p>
             <p>
                <a href="mailto:info@beachfrontcustomhomes.com" className="hover:underline">

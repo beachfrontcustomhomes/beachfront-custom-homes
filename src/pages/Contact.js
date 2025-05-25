@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 
 const PageHero = ({ image, title }) => (
-  <div className="relative w-full h-[80vh] overflow-hidden">
+  <div className="relative w-full h-[65vh] overflow-hidden">
     <img
       src={image}
       alt={title}
@@ -34,7 +34,7 @@ const Contact = () => (
 >
   {/* FormSubmit settings */}
   <input type="hidden" name="_captcha" value="false" />
-<input type="hidden" name="_next" value="https://www.beachfrontcustomhomes.com/thank-you" />
+<input type="hidden" name="_next" value="https://www.beachfrontcustomhomes.com/#/thank-you" />
 
   {/* Form fields */}
   <input type="text" name="name" placeholder="Your Name" required className="p-3 border rounded" />

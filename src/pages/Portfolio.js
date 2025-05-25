@@ -15,7 +15,7 @@ const Portfolio = () => (
 
     <PageHero image="/portfolio.jpg" title="Our Portfolio" />
 
-    <section className="min-h-[60vh] flex flex-col items-center justify-center text-center px-6">
+    <section className="min-h-[70vh] flex flex-col items-center justify-center text-center px-6">
       <h1 className="text-4xl md:text-5xl font-bold mb-6">Coming Soon</h1>
       <p className="text-lg md:text-xl max-w-2xl text-gray-700 mb-4">
         Our collection of bespoke homes is currently being curated.

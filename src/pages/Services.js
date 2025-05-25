@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 
 const PageHero = ({ image, title }) => (
-  <div className="relative w-full h-[80vh] overflow-hidden">
+  <div className="relative w-full h-[70vh] overflow-hidden">
     <img
       src={image}
       alt={title}
