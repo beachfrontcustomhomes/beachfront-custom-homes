@@ -34,7 +34,7 @@ const Contact = () => (
 >
   {/* FormSubmit settings */}
   <input type="hidden" name="_captcha" value="false" />
-<input type="hidden" name="_next" value="https://www.beachfrontcustomhomes.com/thankyou" />
+<input type="hidden" name="_next" value="https://www.beachfrontcustomhomes.com/thank-you" />
 
   {/* Form fields */}
   <input type="text" name="name" placeholder="Your Name" required className="p-3 border rounded" />
