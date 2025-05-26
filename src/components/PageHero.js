@@ -11,7 +11,7 @@ const PageHero = ({ image, title }) => (
     {/* Title Wrapper */}
     <div className="relative z-10 h-full flex justify-center">
       <div className="flex items-start md:items-center justify-center w-full h-full px-4">
-        <h1 className="text-white text-4xl md:text-5xl font-bold drop-shadow-lg pt-62 md:pt-0 text-center">
+        <h1 className="text-white text-4xl md:text-5xl font-bold drop-shadow-lg pt-12 md:pt-0 text-center">
           {title}
         </h1>
       </div>
