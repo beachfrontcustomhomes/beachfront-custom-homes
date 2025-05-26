@@ -5,7 +5,7 @@ const PageHero = ({ image, title }) => (
     className="w-full h-[60vh] bg-cover bg-center flex items-center justify-center pt-35 md:pt-0"
     style={{ backgroundImage: `url(${image})` }}
   >
-   <div className="pt-40 text-center">
+   <div className="pt-42 text-center">
   <h1 className="text-white text-4xl md:text-5xl font-bold drop-shadow-lg">
     {title}
   </h1>
