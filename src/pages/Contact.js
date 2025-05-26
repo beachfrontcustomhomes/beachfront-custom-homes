@@ -1,29 +1,19 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-
-const PageHero = ({ image, title }) => (
-  <div className="relative w-full h-[65vh] overflow-hidden">
-    <img
-      src={image}
-      alt={title}
-      className="absolute top-0 left-0 w-full h-full object-cover"
-    />
-    <div className="absolute inset-0 bg-black/40 flex items-center justify-center z-10">
-      <h1 className="text-white text-4xl md:text-6xl font-bold">{title}</h1>
-    </div>
-  </div>
-);
+import PageHero from "../components/PageHero";
 
 const Contact = () => (
   <>
-  <Helmet>
+    <Helmet>
       <title>Contact | Beachfront Custom Homes</title>
       <meta
         name="description"
-        content="Ready to start your dream home project? Contact Beachfront Custom Homes for luxury custom home building in Southwest Florida."
+        content="Contact Beachfront Custom Homes to begin building or renovating your dream luxury home in Southwest Florida."
       />
     </Helmet>
+
     <PageHero image="/contact.jpg" title="Contact Us" />
+
     <section className="p-8 max-w-3xl mx-auto text-center text-gray-800">
       <h2 className="text-3xl font-bold mb-4">Let's Talk</h2>
       <p className="mb-6 text-lg">We’d love to learn about your vision and how we can help bring it to life.</p>

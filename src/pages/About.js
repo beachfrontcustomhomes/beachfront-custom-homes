@@ -1,18 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-
-const PageHero = ({ image, title }) => (
-  <div className="relative w-full h-[70vh] overflow-hidden">
-    <img
-      src={image}
-      alt={title}
-      className="absolute top-0 left-0 w-full h-full object-cover"
-    />
-    <div className="absolute inset-0 bg-black/40 flex items-center justify-center z-10">
-      <h1 className="text-white text-4xl md:text-6xl font-bold">{title}</h1>
-    </div>
-  </div>
-);
+import PageHero from "../components/PageHero";
 
 const About = () => (
   <>
@@ -20,10 +8,12 @@ const About = () => (
       <title>About | Beachfront Custom Homes</title>
       <meta
         name="description"
-        content="Learn more about Beachfront Custom Homes — a trusted luxury home builder serving Naples and Southwest Florida with precision and elegance."
+        content="Learn about our legacy of luxury homebuilding in Southwest Florida and the values that define Beachfront Custom Homes."
       />
     </Helmet>
+
     <PageHero image="/about.jpg" title="About Us" />
+
     <section className="p-10 text-gray-800 max-w-4xl mx-auto space-y-8">
   <h2 className="text-4xl font-bold text-center mb-4">Crafting Homes as Exceptional as Their Owners</h2>
 
