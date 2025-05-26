@@ -96,13 +96,13 @@ const Layout = ({ children }) => {
 {/* Association Logos */}
 <div className="mt-8 flex items-center justify-center space-x-6">
   <a href="https://www.nahb.org" target="_blank" rel="noopener noreferrer">
-    <img src="/nahb-logo.png" alt="NAHB" className="h-10 w-auto" />
+    <img src="/nahb-logo.png" alt="NAHB" className="h-20 w-auto" />
   </a>
   <a href="https://www.fhba.com" target="_blank" rel="noopener noreferrer">
-    <img src="/fhba-logo.png" alt="FHBA" className="h-10 w-auto" />
+    <img src="/fhba-logo.png" alt="FHBA" className="h-20 w-auto" />
   </a>
   <a href="https://www.cbia.net" target="_blank" rel="noopener noreferrer">
-    <img src="/cbia-logo.png" alt="CBIA" className="h-10 w-auto" />
+    <img src="/cbia-logo.png" alt="CBIA" className="h-20 w-auto" />
   </a>
 </div>
 
