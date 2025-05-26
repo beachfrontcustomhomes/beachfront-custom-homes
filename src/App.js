@@ -55,7 +55,7 @@ const Layout = ({ children }) => {
   <div className="absolute top-[80px] left-0 w-full bg-black/90 text-white text-lg py-6 z-50 flex flex-col items-center space-y-4 md:hidden">
     <Link to="/about" onClick={() => setMenuOpen(false)}>About</Link>
     <Link to="/services" onClick={() => setMenuOpen(false)}>Services</Link>
-    <Link to="/process">Our Process</Link>
+    <Link to="/process" onClick={() => setMenuOpen(false)}>Process</Link>
     <Link to="/portfolio" onClick={() => setMenuOpen(false)}>Portfolio</Link>
     <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
   </div>
@@ -66,7 +66,7 @@ const Layout = ({ children }) => {
   <nav className="hidden md:flex space-x-6 text-white text-lg font-medium absolute right-6 top-6">
     <Link to="/about">About</Link>
     <Link to="/services">Services</Link>
-    <Link to="/portfolio">Process</Link>
+    <Link to="/process">Process</Link>
     <Link to="/portfolio">Portfolio</Link>
     <Link to="/contact">Contact</Link>
   </nav>
@@ -91,8 +91,8 @@ const Layout = ({ children }) => {
       <p><a href="/" className="hover:underline">Home</a></p>
       <p><a href="/about" className="hover:underline">About</a></p>
       <p><a href="/services" className="hover:underline">Services</a></p>
-      <p><a href="/process" className="hover:underline">Portfolio</a></p>
-      <p><a href="/portfolio" className="hover:underline">Process</a></p>
+      <p><a href="/process" className="hover:underline">Process</a></p>
+      <p><a href="/portfolio" className="hover:underline">Portfolio</a></p>
       <p><a href="/contact" className="hover:underline">Contact</a></p>
     </div>
 
