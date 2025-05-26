@@ -8,11 +8,13 @@ const PageHero = ({ image, title }) => (
     {/* Overlay for contrast */}
     <div className="absolute inset-0 bg-black/40 z-0" />
 
-    {/* Title */}
-    <div className="relative z-10 flex items-start justify-center h-full">
-      <h1 className="text-white text-4xl md:text-5xl font-bold drop-shadow-lg pt-40 text-center">
-        {title}
-      </h1>
+    {/* Title Wrapper */}
+    <div className="relative z-10 h-full flex justify-center">
+      <div className="flex items-start md:items-center justify-center w-full h-full px-4">
+        <h1 className="text-white text-4xl md:text-5xl font-bold drop-shadow-lg pt-32 md:pt-0 text-center">
+          {title}
+        </h1>
+      </div>
     </div>
   </div>
 );
